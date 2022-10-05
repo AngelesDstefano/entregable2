@@ -28,7 +28,7 @@ const createUsers = (title) => {
         title,
         is_completed: false
     }
-    usersDB.push(newUser)
+    usersDB.push(newUsers)
     return newUsers
 }
 

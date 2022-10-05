@@ -1,15 +1,15 @@
 //* /users [ POST, GET]
 //* /users:id [GET]
 
+const router = require('express').Router()
 
-const router = require ('express').Router()
+const usersServices = require('./users.services')
 
-router
+router.get('/users', usersServices.getUsers)
 
-router.get('/users',  )
+router.post('/users', usersServices.createNewUsers)
 
+router.get('/users/:id', usersServices.getOneUsers)
 
-router.get('/users')
-
-
-router.post('/users/:id')
+//? Export default : 
+module.exports = router
