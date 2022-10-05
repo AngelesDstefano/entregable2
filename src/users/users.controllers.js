@@ -11,16 +11,15 @@ const usersDB = [
     title: "Este es otro titulo",
     is_completed: false,
   },
-];
+]
 
-const getAllusers = () => {
+const getAllUsers = () => {
     return usersDB
 }
 
 const getUsersById = (id) => {
-
-    const data = usersDB.find(task => task.id === id)
-    return data
+        const data = usersDB.fine (task => task.id === id )
+        return data
 }
 
 const createUsers = (title) => {
@@ -29,12 +28,12 @@ const createUsers = (title) => {
         title,
         is_completed: false
     }
-    usersDB.push(newUsers)
+    usersDB.push(newUser)
     return newUsers
 }
 
 module.exports = {
     getAllUsers,
-    getTodoById,
+    getUsersById,
     createUsers
 }
